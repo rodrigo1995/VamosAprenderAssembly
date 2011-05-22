@@ -1,0 +1,46 @@
+﻿Build started 22/05/2011 18:45:23.
+     1>Project "C:\git\asm\example_001\console32\console32.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\console32.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Users\Elemar\AppData\Local\Temp\2ba1ba619c6645c2960982d69af62fe9.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\main.obj" /W3 /errorReport:prompt /Fl /Tamain.asm
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\git\asm\example_001\Debug\console32.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\console32.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\git\asm\example_001\Debug\console32.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\main.obj
+         LINK : C:\git\asm\example_001\Debug\console32.exe not found or not built by the last incremental link; performing full link
+         console32.vcxproj -> C:\git\asm\example_001\Debug\console32.exe
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: The "METAGEN" task failed unexpectedly.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: System.BadImageFormatException: Could not load file or assembly 'file:///C:\git\asm\example_001\Debug\console32.exe' or one of its dependencies. The module was expected to contain an assembly manifest.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: File name: 'file:///C:\git\asm\example_001\Debug\console32.exe'
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at System.Reflection.Assembly.ReflectionOnlyLoadFrom(String assemblyFile)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.CPPTasks.MetaDumper.GenerateAssemblyMeta(String theModule, String refSearchPath)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.CPPTasks.MetaDumper.GenerateAssemblyMeta(String theModule, String refSearchPath)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.CPPTasks.AsmMeta.CreateMeta(String assemblyFileName, String searchPath, String metaFileName)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.CPPTasks.METAGEN.Execute()
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018:    at Microsoft.Build.BackEnd.TaskBuilder.ExecuteInstantiatedTask(ITaskExecutionHost taskExecutionHost, TaskLoggingContext taskLoggingContext, TaskHost taskHost, ItemBucket bucket, TaskExecutionMode howToExecuteTask, Boolean& taskResult)
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: WRN: Assembly binding logging is turned OFF.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: Note: There is some performance penalty associated with assembly bind failure logging.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MetaGen.targets(52,5): warning MSB4018: 
+         The previous error was converted to a warning because the task was called with ContinueOnError=true.
+         Build continuing because "ContinueOnError" on the task "METAGEN" is set to "true".
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\git\asm\example_001\Debug\console32.exe;#1" /manifest Debug\console32.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\console32.unsuccessfulbuild".
+         Touching "Debug\console32.lastbuildstate".
+     1>Done Building Project "C:\git\asm\example_001\console32\console32.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.56
